@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'Segoe-UI-SemiBold';
+    src: url('fonts/segoe-ui-semibold.eot');
+    src: url('fonts/segoe-ui-semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui-semibold.woff') format('woff'),
+         url('fonts/segoe-ui-semibold.ttf') format('truetype'),
+         url('fonts/segoe-ui-semibold.svg#Segoe-UI-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('fonts/museo300-regular-webfont.eot');
+    src: url('fonts/museo300-regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/museo300-regular-webfont.woff') format('woff'),
+         url('fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo300-regular-webfont.svg#webfontJA9Sojwh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('fonts/museo500-regular-webfont.eot');
+    src: url('fonts/museo500-regular-webfont.eot?#iefix') format('eot'),
+         url('fonts/museo500-regular-webfont.woff') format('woff'),
+         url('fonts/museo500-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo500-regular-webfont.svg#webfontGF4BwnoR') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI';
+    src: url('fonts/segoe-ui.eot');
+    src: url('fonts/segoe-ui.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui.woff') format('woff'),
+         url('fonts/segoe-ui.ttf') format('truetype'),
+         url('fonts/segoe-ui.svg#Segoe-UI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe-UI-Bold';
+    src: url('fonts/segoe-ui-bold.eot');
+    src: url('fonts/segoe-ui-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/segoe-ui-bold.woff') format('woff'),
+         url('fonts/segoe-ui-bold.ttf') format('truetype'),
+         url('fonts/segoe-ui-bold.svg#Segoe-UI-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BradhITC';
+    src: url('fonts/BradhITC.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('fonts/SourceSansPro-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('fonts/SourceSansPro-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('fonts/SourceSansPro-Semibold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%;}
+
+.clear{ clear: both; }
+
+p {margin: 10px;padding: 0;letter-spacing: 0px;}
+
+/*#bg { position:absolute; overflow:hidden; left:0; right:0; z-index: 1; width:100%; height:100%; }
+#bg img { min-width:100%; min-height:auto;   position:relative; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }*/
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1360px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	border: 0;
+}
+
+a img{border:0}
+
+@media screen and (max-width: 1360px) { /* Specific to this particular image */
+	img.bg {
+		left: 50%;
+		margin-left: -680px;   /* 50% */
+	}
+	
+	
+}
+
+#wrapper { min-height:100%; position:relative;  }
+.clear{ clear: both}
+
+body {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'SourceSansPro-Light', Georgia, times, serif;
+    color: #555555;
+    min-width:480px;
+	/*background: url(images/bg.jpg) 0 0 no-repeat #ffffff;*/
+}
+header p,
+#box h1,
+#box p,
+#countdown-container p,
+#footer p.note,
+#footer p.legal {
+	white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */;
+}
+#cont{
+	position: relative;
+	top:100px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+header{
+	width: 600px;
+	margin: 0 auto;
+}
+
+header #logo{margin: 0; padding: 0; float: left;}
+header p{
+	width: 300px;
+	text-align: right;
+	float: right;
+	font-family: 'SourceSansPro-Light', Georgia, times, serif;
+	font-weight: bold;
+	font-weight: bold;
+\9;
+		*font-weight: normal;
+	color: #000066;
+	font-size: 30px;
+	line-height: 25px;
+	margin: 25px 0;
+	padding: 0;
+	letter-spacing: -1px;
+}
+.arrow-up {
+	position: absolute;
+	top: 9px;
+	width: 0; 
+	height: 0; 
+	margin-left: 457px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid white;
+	z-index: 20;
+}
+#box {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	z-index: 2;
+	padding-top: 29px;
+}
+#box:after{
+	content:url(images/shadow-heavy.png);
+	position: absolute;
+	margin:0;
+	z-index: -10;
+}
+#box-top {
+	position: relative;
+	background: #fff;
+	-webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 24px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#box-bottom {
+	position: relative;
+	background: #2792d6 url(images/bg-btm.png) top left repeat;
+	-webkit-border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 5px 10px 5px;
+    z-index: 0;
+
+}
+
+#box h1{
+	margin: 0 auto;
+	padding: 20px 30px 5px;
+	font-family: 'SourceSansPro-Semibold', Georgia, times, serif;
+	font-size: 24px;
+	color: #000066;
+	text-align: center;
+	font-weight: 100;
+	letter-spacing: -0.5px;
+}
+
+#box p{
+	font-family: 'SourceSansPro-Light', Georgia, times, serif;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+		font-weight: 100\9;
+		*font-weight: 100;
+	letter-spacing: -.5px;
+	color: #777777;
+	padding: 0 20px;
+	margin:0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#box p{
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
+}
+
+/* ---------- TIMER ---------- */
+
+#box #countdown-container{
+	position:relative; 
+	margin:0; 
+}
+@-moz-document url-prefix() {
+	#box #countdown-container{
+ 	padding: 0;
+  	}
+}
+#countdown-container .launch-text {
+	width: 200px; 
+	margin: 5px 0 0 5px;
+	display: inline-block; 
+	line-height: 22px; 
+	padding: 20px; 
+	font-family: 'SourceSansPro-Semibold', Georgia, times, serif;
+	font-size: 24px;
+	color: #ffffff; 
+	text-align: left;
+	float:left;
+}
+#timer {
+	display: inline-block; 
+	position: relative; 
+	margin: 0 20px 0 0;
+	float:right;
+}
+ul#countdown li {
+	float: left;
+  	display: inline-block;
+  	background: transparent url('images/clock-bg.png') no-repeat left top;
+  	width: 71px;
+  	text-align: center;
+  	margin-right: 10px;
+}
+ul#countdown li span {
+  	font-family: 'Oswald', sans-serif;
+  	font-weight: 400;
+  	font-size: 2.1em;
+  	color: #1f2225;
+  	line-height: 70px;
+  	position: relative;
+  	text-shadow: 1px 1px 1px white;
+  	text-align: center;
+  	padding-right: 1px;
+}
+ul#countdown li span::before {
+  	content: '';
+  	width: 100%;
+  	height: 1px;
+  	border-top: 2px solid #e0e0e0;
+  	position: absolute;
+  	top: 50%;
+  	text-align: center;
+  	left: 1px;
+}
+ul#countdown li p.timeRefDays,
+ul#countdown li p.timeRefHours,
+ul#countdown li p.timeRefMinutes,
+ul#countdown li p.timeRefSeconds {
+  	display: inline-block;
+  	float: left;
+  	font-family: 'Oswald', sans-serif;
+  	font-weight: 300;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-size: 14px;
+   		*font-size:8px;
+   		 font-size:10px\9;
+  	text-align: center;
+  	margin: 2px auto ;
+  	letter-spacing: 1px;
+  		*letter-spacing: 0px;
+  		letter-spacing: 0px\9;
+}
+ul#countdown li p.timeRefDays {
+	padding-left: 22px;
+}
+ul#countdown li p.timeRefHours {
+	padding-left: 12px;
+		padding-left: 20px\9;
+}
+ul#countdown li p.timeRefMinutes {
+	padding-left: 8px;
+		padding-left: 15px\9;
+}
+ul#countdown li p.timeRefSeconds {
+	padding-left: 7px;
+		padding-left: 13px\9;
+}
+
+
+div#form{
+		margin: 20px auto 0;
+		padding: 0;
+		width: 550px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	
+	div#form{
+		margin: 20px auto 0;
+		padding: 0;
+		width: 550px;
+	}
+}
+
+
+div #form input{float: left;}
+#email{
+	width: 353px;
+	height: 50px;
+	background: #ededed;
+	border-radius: 4px;
+	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+	border: none;
+	color: #999999;
+	font-family: 'SourceSansPro-Light', Georgia, times, serif;
+	font-size: 18px;
+	font-style: italic;
+	padding-right: 20px;
+	padding-left: 20px;
+		line-height: 50px\9;
+		*line-height: 50px;
+
+}
+#submit{
+	font-family: 'SourceSansPro-Light', Georgia, times, serif;
+	margin-left: 15px;
+	width: 138px;
+	height: 50px;
+	background: #3698d7;
+	border: 1px solid #3698d7;
+		border:none\9;
+		*border:none;
+	box-shadow: inset 0px 1px 1px rgba(250, 250, 250, 0.5);
+	cursor: pointer;
+	font-size: 22px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	color: #fff;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	background: #3da6e4;
+	background: -moz-linear-gradient(top,  #3da6e4 0%, #3697d7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3da6e4), color-stop(100%,#3697d7));
+	background: -webkit-linear-gradient(top,  #3da6e4 0%,#3697d7 100%);
+	background: -o-linear-gradient(top,  #3da6e4 0%,#3697d7 100%);
+	background: -ms-linear-gradient(top,  #3da6e4 0%,#3697d7 100%);
+	background: linear-gradient(to bottom,  #3da6e4 0%,#3697d7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3da6e4', endColorstr='#3697d7',GradientType=0 );
+}
+#submit:hover {
+	background: #3698d7;
+}
+
+#footer{
+	position: relative;
+	width: 600px;
+	margin: 0px auto;
+	color: #fff;
+	font-family: 'SourceSansPro-Light', Georgia, times, serif;
+	font-size: 14px;
+	z-index: 20;
+	text-align: center;
+}
+#footer p.legal{ 
+	width: 600px;
+	position: absolute;
+	text-align: center;
+	margin-top: 35px;
+	z-index: 20;
+}
+#footer p.note{ 
+	width: 600px;
+	position: absolute;
+	text-align: center;
+	margin-top:12px;
+	z-index: 20;
+}
+
+#footer p a{
+	color: #fff;
+	text-decoration: underline;
+}
